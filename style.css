@@ -1,4 +1,5 @@
 :root {
+	--background-color: #eee;
 	--background-image-url: url(/light.png);
 	--spacing: 2em;
 	--spacing--small: 2em;
@@ -15,6 +16,7 @@
 
 @media only screen and (prefers-color-scheme: dark) {
 	:root {
+		--background-color: #111;
 		--background-image-url: url(/dark.png);
 		--color--copy: #ccc;
 	}
@@ -37,6 +39,7 @@ html {
 }
 
 body {
+	background-color: var(--background-color);
 	background-image: var(--background-image-url);
 	background-size: 200px;
 	color: var(--color--copy);
