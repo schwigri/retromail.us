@@ -1,0 +1,14 @@
+copyright = "Copyright © 2022"
+defaultContentLanguage = "en"
+title = "RetroMail"
+
+[languages]
+[languages.en]
+title = "RetroMail"
+[languages.en.params]
+madeIn = "Made in 🇺🇸"
+
+[languages.es-us]
+title = "RetroMail"
+[languages.es-us.params]
+madeIn = "Hecho en 🇺🇸"

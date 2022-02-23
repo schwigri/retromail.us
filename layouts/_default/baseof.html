@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ .Language }}">
+<head>
+	<meta charset="utf-8">
+	<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+	<link href="/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="site">
+	<header class="header">
+		<img alt="RetroMail" class="logo" src="/logo.png" srcset="/logo.png, /logo@2x.png 2x">
+	</header>
+
+	{{ block "main" . }}
+	<!-- Main section -->
+	{{ end }}
+
+	<footer class="footer">
+		<span class="copyright">{{ .Site.Copyright }}</span>
+		<span class="made-in">{{ .Site.Params.MadeIn }}</span>
+	</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+:root {
+	--background-image-url: url(/light.png);
+	--spacing: 2em;
+	--spacing--small: 2em;
+	--color--copy: #333;
+	--font-size--sm: 1rem;
+	--font-size--md: 1.125rem;
+}
+
+@media (min-resolution: 192dpi) {
+	:root {
+		--background-image-url: url(/light@2x.png);
+	}
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+	:root {
+		--background-image-url: url(/dark.png);
+		--color--copy: #ccc;
+	}
+}
+
+@media only screen and (prefers-color-scheme: dark) and (min-resolution: 192dpi) {
+	:root {
+		--background-image-url: url(/dark@2x.png);
+	}
+}
+
+@media (min-width: 832px) {
+	:root {
+		--spacing: 4em;
+	}
+}
+
+html {
+	font-family: "STIX Two Text", serif;
+}
+
+body {
+	background-image: var(--background-image-url);
+	background-size: 200px;
+	color: var(--color--copy);
+	font-size: var(--font-size--md);
+}
+
+.made-in::before {
+	content: "—";
+	margin: 0 0.5em;
+}
+
+.footer {
+	font-size: var(--font-size--sm);
+	margin: var(--spacing--small) 0;
+	text-align: center;
+}
+
+.logo {
+	max-width: 100%;
+}
+
+.header {
+	margin: var(--spacing) 0;
+	text-align: center;
+}
+
+.site {
+	margin: var(--spacing) auto;
+	max-width: 800px;
+	padding: 0 1em;
+}
